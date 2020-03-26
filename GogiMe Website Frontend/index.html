@@ -1,0 +1,38 @@
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.id.value=="user") { 
+if (form.pass.value=="pass") {              
+location="index.html" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+<!-- } -->
+}}
+//-->
+</script>
+<link href="css/loginpage.css">
+<head>
+<title>Gogime Login Page</title
+</head>
+<body style='background-image: url("img/loginWallpaper.png");'>
+<div class = "LoginScreen" style="margin-left:42%; margin-top:20%; width: 288px; background-color:lightblue;">
+	<form bgcolor="white" cellpadding="12" border="1">
+<div class = "login-title" style="margin-left: 100px; font-size: 40px;">
+							<b>Login</b>
+</div>
+<div class = "input userID">
+		<b>UserID:</b>
+		<form name="login">
+		<input name="id" type="text" style="height: 20px;width: 200px;margin-left: 25px;margin-top: 10px;">
+</div>
+<div>
+<b>Password:</b>
+<input name="pass" type="password" style="height: 20px;width: 200px;margin-left: 10px;margin-top: 10px;">
+</div>
+<input type="button" value="Login" onClick="pasuser(this.form)" style="margin-top: 5px;height: 30px;width: 140px;">
+<button type="button"style="margin-top: 5px;height: 30px;width: 140px;"><a href="Signup.html">Sign Up</a></button></form> 
+</body>

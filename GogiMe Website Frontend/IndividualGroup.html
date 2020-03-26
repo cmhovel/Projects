@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GogiMe | The Fitness Network for Everyone</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=858315894564523">
+    </script>
+  <header>
+    <div class="container">
+      <img src="img/logo.png" class="logo" alt="">
+	 <form class="form-Facebook" style="padding-top:5px; padding-left:20px;">
+	 <div class="fb-login-button" 
+		data-width="100" 
+		data-size="medium" 
+		data-button-type="continue_with" 
+		data-auto-logout-link="true" 
+		data-use-continue-as="false">
+	</div>
+	</form>
+	<form name = "signout"
+         <button type="submit" class="btn btn-default"><a href = "index.html">Sign Out</a></button>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="hamburger-menu" style="margin-right: 5px;">
+            <div id="bar1" style="width: 35px;height: 5px;background-color: blue;margin-top: 10px;transition: .5s;">
+            </div>
+            <div id="bar2" style="width: 35px;height: 5px;background-color: blue;margin: 6px 0;transition: .5s;"></div>
+            <div id="bar3" style="width: 35px;height: 5px;background-color: blue;margin: 6px 0;transition: .5s;"></div>
+          </li>
+          <li class="navbarlinks"><a href="Home.html">Home</a></li>
+          <li class="navbarlinks"><a href="Friends.html">Friends</a></li>
+          <li class="navbarlinks"><a href="contact.html">Contact</a></li>
+          <li class=" active navbarlinks"><a href="meetups.html">Meetups</a></li>
+          <li class="navbarlinks"><a href="photos.html">Photos</a></li>
+          <li class="navbarlinks"><a href="profile.html">Profile</a></li>
+        </ul>
+</nav>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="profile">
+            <h1 class="page-header">Soccer Tournament Hosted by AASA</h1>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/user.png" class="img-thumbnail" alt="">
+              </div>
+              <div class="col-md-8">
+                <ul>
+                  <li><strong>Name:</strong>Alexandria Area Soccer Association</li>
+                  <li><strong>Email:</strong>AASA@gmail.com</li>
+                  <li><strong>City:</strong>Alexandria</li>
+                  <li><strong>State:</strong>Minnesota</li>
+                  <li><strong>Zip Code:</strong>56308</li>
+                  <li><strong>Phone Number:</strong>123-4454-9658</li>
+				  <li><strong>Date:</strong>August 24th, 2020</li>
+				  <li><strong>Start Time:</strong>TBD</li>
+                </ul>
+              </div>
+            </div><br><br>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Profile Wall</h3>
+                  </div>
+                  <div class="panel-body">
+                    <form>
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Write on the wall"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                      <div class="pull-right">
+                        <div class="btn-toolbar">
+                          <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i>Text</button>
+                          <button type="button" class="btn btn-default"><i class="fa fa-file-image-o"></i>Image</button>
+                          <button type="button" class="btn btn-default"><i class="fa fa-file-video-o"></i>Video</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default Location">
+            <div class="panel-heading">
+              <h3 class="panel-title">Location</h3>
+            </div>
+            <div class="panel-body">
+              <ul id="map">
+                <script>
+                  var map;
+                  function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                      center: { lat: 45.885, lng: -95.377 },
+                      zoom: 8
+                    });
+                  }
+                </script>
+                <script
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO56L9nE8heRjIc4ruxuO1x_WzmAUT3kg&callback=initMap"
+                  async defer>
+                  </script>
+              </ul </div> </div> </div> </div> <div class="col-md-4">
+              <div class="panel panel-default Twitter">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Twitter</h3>
+                </div>
+                <div class="panel-body">
+                  <ul>
+                    <a class="twitter-timeline" data-height="400" data-width="1000" data-link-color="#E95F28"
+                      href="https://twitter.com/AAHSeveryday">Tweets by TwitterDev</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </ul>
+                  <div class="clearfix"></div>
+                  <a class="btn btn-primary" href="#">View All Friends</a>
+                </div>
+              </div>
+              <div class="panel panel-default groups">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Latest Groups</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="group-item">
+                    <img src="img/group.png" alt="">
+                    <h4><a href="#" class="">Sample Group One</a></h4>
+                    <p>This is a paragraph of intro text, or whatever I want to call it.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="group-item">
+                    <img src="img/group.png" alt="">
+                    <h4><a href="#" class="">Sample Group Two</a></h4>
+                    <p>This is a paragraph of intro text, or whatever I want to call it.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="group-item">
+                    <img src="img/group.png" alt="">
+                    <h4><a href="#" class="">Sample Group Three</a></h4>
+                    <p>This is a paragraph of intro text, or whatever I want to call it.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <a href="#" class="btn btn-primary">View All Groups</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script src="js/FacebookFunctions.js" </script> <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
